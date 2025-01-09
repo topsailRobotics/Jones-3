@@ -16,11 +16,9 @@ opuyo
 jioohhu
 
 guigiugg
-<<<<<<< HEAD
 ggua
-=======
 ggu
 ??
 Hi james, this is willem
->>>>>>> 01561731032bb1e8d84f737a1cba0753ced3aef3
 willem 0.o
+This is a janky programs
