@@ -1,2 +1,4 @@
-Readme file to communicate for Jones 3 code
-New codespace:Jones-3
+This is the code for the FRC Robot Jones-3
+We use a command based robot
+
+Made by the BOGO Bots Team, Topsail High School
