@@ -1,0 +1,37 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Coral 6"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "runEE"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Coral6+ pickup"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "2 step",
+  "choreoAuto": false
+}
