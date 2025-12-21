@@ -1,0 +1,109 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "KickerOn"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left P1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ElevatorL3"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.5
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "KickerOff"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left P2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "runEE"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ElevatorL1"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left P3"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "EEintake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left P4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ElevatorL3"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "runEE"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
