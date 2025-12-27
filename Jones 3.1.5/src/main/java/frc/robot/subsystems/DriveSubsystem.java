@@ -278,7 +278,88 @@ private final Field2d m_field = new Field2d();
 //left = -18.25 
 //right = 18.25
   public void AutoMove(DriveSubsystem DriveSubsystem, double Horizontaloffset){
-        
+      switch(LimelightHelpers.getFiducialID("limelight"))
+      {
+          case(18):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID18Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(19):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID19Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          case(20):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID20Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(21):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID21Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          case(22):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID22Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(17):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID17Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          case(6):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID6Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(7):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID7Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          case(8):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID8Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(9):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID9Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          case(10):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID10Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false); 
+          case(11):
+          DriveSubsystem.drive( 
+                  -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
+                  -MathUtil.applyDeadband(((LimelightHelpers.getTX("limelight") + Horizontaloffset )  * LimelightConstants.kHorizontalTargetP), 0),
+                  -MathUtil.applyDeadband(((-(m_gyro.getAngle())+180)-LimelightConstants.kTagID11Rot) * LimelightConstants.kRotationTargetP, 0),
+                  false);
+          default:
+          DriveSubsystem.drive(-MathUtil.applyDeadband(0, 0),
+              -MathUtil.applyDeadband(0, 0),
+              -MathUtil.applyDeadband(0, 0),
+              false);
+
+      }
+    /* 
             if (LimelightHelpers.getFiducialID("limelight") == 18) {
               DriveSubsystem.drive( 
                   -MathUtil.applyDeadband((LimelightHelpers.getTA("limelight") - LimelightConstants.kTargetPercentOfScreen) * LimelightConstants.kDistanceTargetP  , 0),
@@ -369,6 +450,7 @@ private final Field2d m_field = new Field2d();
               -MathUtil.applyDeadband(0, 0),
               false);
             }
+            */
    
     }
     public void moveLeft(DriveSubsystem DriveSubsystem){
